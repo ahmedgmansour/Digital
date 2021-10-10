@@ -154,8 +154,11 @@ kubectl create -f pod1.yaml
 ## Install minIO server
 
 ssh master1
+
 git clone https://github.com/minio/minio.git
+
 helm install minio /helm/menio
+
 kubectl get pod
 
 
