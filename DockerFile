@@ -1,0 +1,14 @@
+FROM python:3
+ADD helloworld.py /
+RUN pip install flask
+RUN pip install flask_restful
+RUN yum -y update && \
+    yum -y install httpd && \
+    yum clean all
+COPY ./script.sh /
+RUN chmod +x /minio-upload.sh
+ENTRYPOINT ["/minio-upload.sh"]
+EXPOSE 3333
+CMD [ "python", "./helloworld.py"]
+
+
