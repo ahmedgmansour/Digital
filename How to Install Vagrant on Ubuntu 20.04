@@ -1,0 +1,20 @@
+Vagrant is a command-line tool for building and managing virtual machines.
+
+If VirtualBox is not installed on your system you can install it by running:
+#sudo apt update
+#sudo apt install virtualbox
+......................................................................
+
+Download the Vagrant package with wget :
+
+#curl -O https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb
+
+Once the file is downloaded, install it by typing:
+
+#sudo apt install ./vagrant_2.2.9_x86_64.deb
+
+To verify that the installation was successful, run the following command that will print the Vagrant version:
+
+#vagrant --version
+
+.......................................................................
